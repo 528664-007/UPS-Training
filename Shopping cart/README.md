@@ -1,43 +1,100 @@
-## Getting Started
+**OUTPUT**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+Data file: D:\Coding\sameer\data\supermarket-data.csv
 
-The workspace contains two folders by default, where:
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 1
+No products in inventory.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 2
+Product name: Chicken
+Category: Food
+Unit price: 100
+Starting quantity: 1
+Low-stock alert threshold: 1
+Added Chicken with ID P0001.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 1
+ID       NAME                     CATEGORY                PRICE    STOCK  LOW ALERT
+-------------------------------------------------------------------------------
+P0001    Chicken                  Food                   100.00        1          1
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 
+PS D:\Coding\sameer>  d:; cd 'd:\Coding\sameer'; & 'c:\Users\HP\.vscode\extensions\redhat.java-1.58.0-win32-x64\jre\25.0.4.1-win32-x86_64\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'D:\Coding\sameer\bin' 'App' 
+Supermarket Manager
+Data file: D:\Coding\sameer\data\supermarket-data.csv
 
-## Run the supermarket manager
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 2
+Product name: fish
+Category: food
+Unit price: 50
+Starting quantity: 2
+Low-stock alert threshold: 0
+Added fish with ID P0002.
 
-Compile and run the program from the workspace root:
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 8
+ID       NAME                     CATEGORY                PRICE    STOCK  LOW ALERT
+-------------------------------------------------------------------------------
+P0001    Chicken                  Food                   100.00        1          1
 
-```sh
-javac --release 8 -d bin src/App.java
-java -cp bin App
-```
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 2
+Product name: Soap
+Category: Beauty
+Unit price: 40
+Starting quantity: 1
+Low-stock alert threshold: 0
+Added Soap with ID P0003.
 
-The interactive menu supports product listing, adding, editing and removal,
-search by product ID/name/category, restocking, checkout, low-stock alerts,
-and sales history/revenue reporting. Prices are stored as decimal currency
-values and checkout checks available stock before completing a sale.
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 6 
+Product ID to restock: P0001
+Quantity to add: 50
+Chicken restocked. New quantity: 51
 
-All inventory and sales data is saved in `data/supermarket-data.csv`. The
-directory and file are created automatically when the first change is saved.
-You can optionally provide a different CSV path:
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 1
+ID       NAME                     CATEGORY                PRICE    STOCK  LOW ALERT
+-------------------------------------------------------------------------------
+P0001    Chicken                  Food                   100.00       51          1
+P0002    fish                     food                    50.00        2          0
+P0003    Soap                     Beauty                  40.00        1          0
 
-```sh
-java -cp bin App "C:\store\data.csv"
-```
-
-The CSV file is written as an atomic snapshot where supported. Do not edit it
-while the program is running. Keep a backup of this file to preserve your data.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. List products   2. Add product     3. Edit product
+4. Remove product  5. Search          6. Restock product
+7. Checkout        8. Low-stock list  9. Sales report
+10. Exit
+Choose an option: 
