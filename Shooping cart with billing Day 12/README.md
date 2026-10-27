@@ -1,58 +1,68 @@
-## Getting Started
+#OUTPUT
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Data file: D:\Coding\sameer\data\supermarket-data.csv
 
-## Folder Structure
+1. Customer
+2. Seller
+3. Exit
+Choose a role: 1
 
-The workspace contains two folders by default, where:
+Customer
+1. Browse products  2. Shop and get a bill
+3. View a bill      4. Back
+Choose an option: 1
+ID       NAME                     CATEGORY                PRICE    STOCK  LOW ALERT
+-------------------------------------------------------------------------------
+P0001    Chicken                  Food                   100.00       51          1
+P0002    fish                     food                    50.00        2          0
+P0003    Soap                     Beauty                  40.00        1          0
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Customer
+1. Browse products  2. Shop and get a bill
+3. View a bill      4. Back
+Choose an option: 2
+ID       NAME                     CATEGORY                PRICE    STOCK  LOW ALERT
+-------------------------------------------------------------------------------
+P0001    Chicken                  Food                   100.00       51          1
+P0002    fish                     food                    50.00        2          0
+P0003    Soap                     Beauty                  40.00        1          0
+Customer name for the bill: sameer
+Enter product IDs and quantities. Leave ID blank to finish.
+Product ID: P0001 
+Quantity (available: 51): 2
+Product ID: P0002
+Quantity (available: 2): 1 
+Enter a percentage from 0 to 100.
+Discount percentage (0-100): 5
+Payment method (cash/card/mobile): cash
+Amount tendered (due 240.35): 245
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Invoice preview
+--------------------------------------------------
+Chicken x 2 @ 100.00 = 200.00
+fish x 1 @ 50.00 = 50.00
+Subtotal: 250.00
+Discount (5%): -12.50
+Tax (1.2%): 2.85
+Total due: 240.35
+Payment: CASH  Tendered: 245.00  Change: 4.65
+Complete sale? (y/n): y
+Sale completed.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Invoice C28E67AC
+Customer: sameer
+2026-10-27 22:04:29
+--------------------------------------------------
+Chicken (P0001) x 2 @ 100.00 = 200.00
+fish (P0002) x 1 @ 50.00 = 50.00
+Subtotal: 250.00
+Discount (5%): -12.50
+Tax (1.2%): 2.85
+Total: 240.35
+Payment method: CASH
+Amount tendered: 245.00
+Change: 4.65
+-------------------------------------------------
 
-## Run the supermarket manager
 
-Compile and run the program from the workspace root:
-
-```sh
-javac --release 8 -d bin src/App.java
-java -cp bin App
-```
-
-Choose a role from the opening menu:
-
-- **Customer** can browse available products, shop from the catalog, enter a
-  name for the bill, choose a discount and payment method, and receive or
-  retrieve an invoice by its ID.
-- **Seller** can manage inventory, create a bill for a named customer, view
-  sales and invoice history, and update a saved invoice's customer name, item
-  quantities, discount, and payment details. Invoice updates adjust inventory
-  and recalculate totals.
-
-Checkout creates an itemized invoice with a percentage discount, 1.2% tax
-applied after the discount, payment method, amount tendered, and change. Cash
-payments must cover the total due; card and mobile payments are recorded for
-the exact total. Prices are stored as decimal currency values, and checkout
-checks available stock before completing a sale.
-
-All inventory and sales data is saved in `data/supermarket-data.csv`. The
-directory and file are created automatically when the first change is saved.
-The CSV is Excel-compatible and includes invoice-level totals, payment
-details, customer names, and sale lines. Existing CSV files with the original
-eight columns and earlier billing rows continue to load; older sales do not
-have historical customer, discount, tax, or payment details.
-You can optionally provide a different CSV path:
-
-```sh
-java -cp bin App "C:\store\data.csv"
-```
-
-The CSV file is written as an atomic snapshot where supported. Do not edit it
-while the program is running. Keep a backup of this file to preserve your data.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<img width="1717" height="417" alt="image" src="https://github.com/user-attachments/assets/7aec04f9-836c-4973-ac69-e0bb01f26616" />
