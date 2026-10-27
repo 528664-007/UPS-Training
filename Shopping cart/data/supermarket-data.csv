@@ -1,0 +1,4 @@
+type,id,name,category,price,quantity,lowStockThreshold,date
+PRODUCT,P0001,Chicken,Food,100.00,51,1,
+PRODUCT,P0002,fish,food,50.00,2,0,
+PRODUCT,P0003,Soap,Beauty,40.00,1,0,
