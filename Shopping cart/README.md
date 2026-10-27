@@ -98,3 +98,7 @@ P0003    Soap                     Beauty                  40.00        1        
 7. Checkout        8. Low-stock list  9. Sales report
 10. Exit
 Choose an option: 
+
+
+
+<img width="1005" height="723" alt="image" src="https://github.com/user-attachments/assets/28690613-bf7a-4b9a-9bcb-79b93fd2eaaa" />
