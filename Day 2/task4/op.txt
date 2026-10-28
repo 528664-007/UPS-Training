@@ -1,0 +1,13 @@
+Enter your name:
+Sameer
+Enter your age:
+21
+Enter your location:
+Chennai
+Enter your role:
+AIML Engineer
+BIO DATA:
+Name: Sameer
+Age: 21
+Location: Chennai
+Role: AIML Engineer
