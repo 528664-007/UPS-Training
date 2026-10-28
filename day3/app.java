@@ -1,4 +1,8 @@
- public static void main(String[] args) {
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+	    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter three numbers: ");
         int a = sc.nextInt();
