@@ -37,30 +37,8 @@ Discount percentage (0-100): 5
 Payment method (cash/card/mobile): cash
 Amount tendered (due 240.35): 245
 
-Invoice preview
---------------------------------------------------
-Chicken x 2 @ 100.00 = 200.00
-fish x 1 @ 50.00 = 50.00
-Subtotal: 250.00
-Discount (5%): -12.50
-Tax (1.2%): 2.85
-Total due: 240.35
-Payment: CASH  Tendered: 245.00  Change: 4.65
-Complete sale? (y/n): y
-Sale completed.
+<img width="665" height="632" alt="image" src="https://github.com/user-attachments/assets/01dfac6f-0a5c-4230-9acb-faf05866dfd3" />
 
-Invoice C28E67AC
-Customer: sameer
-2026-10-27 22:04:29
---------------------------------------------------
-Chicken (P0001) x 2 @ 100.00 = 200.00
-fish (P0002) x 1 @ 50.00 = 50.00
-Subtotal: 250.00
-Discount (5%): -12.50
-Tax (1.2%): 2.85
-Total: 240.35
-Payment method: CASH
-Amount tendered: 245.00
 Change: 4.65
 -------------------------------------------------
 
