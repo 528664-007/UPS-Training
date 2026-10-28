@@ -1,0 +1,9 @@
+Enter first number: 10
+Enter second number: 20
+Addition:30
+Subtraction:-10
+Multiplication:200
+Division:0
+Enter your name:
+sameer
+My name is sameer
