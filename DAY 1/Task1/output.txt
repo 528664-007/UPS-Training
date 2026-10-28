@@ -1,0 +1,10 @@
+BIO DATA
+Name: Sameer R
+Phone Number: +91 70108 xxxxx
+Email: sameerfayaz1028@gmail.com
+Location: Chennai, India
+Date of Birth: 10/07/2005
+Gender: Male
+Nationality: Indian
+Languages Known: English, Tamil, Hindi, Urdu
+Hobbies: Reading, Coding, Travelling
