@@ -1,0 +1,5 @@
+class task1{
+    public static void main(String[] args){
+        System.out.println("BIO DATA\nName: Sameer R\nPhone Number: +91 70108 xxxxx\nEmail: sameerfayaz1028@gmail.com\nLocation: Chennai, India\nDate of Birth: 10/07/2005\nGender: Male\nNationality: Indian\nLanguages Known: English, Tamil, Hindi, Urdu\nHobbies: Reading, Coding, Travelling");
+    }
+}
