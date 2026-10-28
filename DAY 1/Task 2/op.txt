@@ -1,0 +1,7 @@
+Name: Sameer Yaseen
+Age: 21
+Marks: 100
+Height:169
+Weight: 55
+City: Chennai
+Mobile Number: 77777777
