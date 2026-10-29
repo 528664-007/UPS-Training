@@ -1,18 +1,20 @@
-import java.util.Scanner;
+import java.util.*;
 
 class Main {
+    static int countVowels(String s) {
+        int count = 0;
+        s = s.toLowerCase();
+
+        for (int i = 0; i < s.length(); i++)
+            if ("aeiou".indexOf(s.charAt(i)) != -1)
+                count++;
+
+        return count;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine().toLowerCase();
-        int count = 0;
-
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
-            if ("aeiou".indexOf(ch) != -1)
-                count++;
-        }
-
-        System.out.println(count);
+        String s = sc.nextLine();
+        System.out.println(countVowels(s));
     }
 }
