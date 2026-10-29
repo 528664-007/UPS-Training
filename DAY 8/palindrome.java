@@ -1,9 +1,10 @@
-import java.util.Scanner;
+import java.util.*;
 
 class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+    static boolean isPalindrome(int n) {
+        if (n < 0)
+            return false;
+
         int temp = n, rev = 0;
 
         while (n > 0) {
@@ -11,7 +12,14 @@ class Main {
             n /= 10;
         }
 
-        if (temp == rev)
+        return temp == rev;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if (isPalindrome(n))
             System.out.println("Palindrome");
         else
             System.out.println("Not Palindrome");
